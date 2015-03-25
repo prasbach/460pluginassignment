@@ -1,0 +1,109 @@
+/*
+Plugin Name: Slider
+Description: This plugin will allow you to feature your favourite images on your wordpress site!
+Version: 1.0
+Author: Elyse Mattarollo, Tom Salamanov, Paige Rasbach
+ */
+ .slipperysliderSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+.slipperysliderSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.slipperyslider-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.slipperysliderSlider a.slipperyslider-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+	background:white; 
+	filter:alpha(opacity=0); 
+	opacity:0;
+}
+/* The slices and boxes in the Slider */
+.slipperyslider-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.slipperyslider-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.slipperyslider-box img { display:block; }
+
+/* Caption styles */
+.slipperyslider-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.slipperyslider-caption p {
+	padding:5px;
+	margin:0;
+}
+.slipperyslider-caption a {
+	display:inline !important;
+}
+.slipperyslider-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.slipperyslider-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.slipperyslider-prevNav {
+	left:0px;
+}
+.slipperyslider-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.slipperyslider-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.slipperyslider-controlNav a {
+	cursor:pointer;
+}
+.slipperyslider-controlNav a.active {
+	font-weight:bold;
+}
